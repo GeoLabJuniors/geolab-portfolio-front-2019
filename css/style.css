@@ -1,0 +1,160 @@
+body {
+	background-color: #f4f4f4;
+}
+.navbar-brand img {
+	width: 68px;
+	height: 61px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	display: inline-block;
+}
+.navbar {
+	line-height: 94px;
+}
+.about {
+	width: 150px;
+	height: 61px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	text-align: center;
+	color: #8f68a8;
+	font-size: 12px;
+	line-height:61px;
+	margin-right: 20px;
+}
+.search {
+	width: 65px;
+	height: 61px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	line-height: 61px;
+}
+.search img {
+	height: 40px;
+	width: 57px;
+	line-height: 61px;
+}
+.search-div {
+	height: 92px;
+	opacity: 0.5;
+	background-color: #ffffff;
+	margin-bottom: 30px;
+}
+.search-input {
+	line-height: 90px;
+	border: none;
+	width: 50%;
+}
+.search-div img {
+	width: 36.5px;
+	height: 22.5px;
+}
+.search-div .navbar-right {
+	line-height: 90px;
+}
+.border {
+	background-color: #a28989f0;
+	height: 46px;
+	display: inline-block;
+	width: 1px;
+}
+.close {
+	width: 65px;
+	height: 61px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	line-height: 61px;
+	font-size: 42px;
+	margin-top: 15px;
+	display: none;
+}
+.tags {
+	width: 65px;
+	height: 28px;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+	
+}
+.tags p{
+	color: #8f68a8;
+	line-height: 28px;
+	text-align: center;
+}
+.alltag {
+	display: none;
+}
+.alltag div {
+	display:inline-block;
+	margin-right: 10px;
+	margin-bottom: 1%;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+	padding: 0 1%;
+}
+.alltag p {
+	color: #8f68a8;
+	line-height: 24px;
+	text-align: center;
+}
+.img-box {
+	opacity: 0.98;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+}
+.img-box h1 {
+	color: #405089;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+}
+.img-size{
+	width: 100%;
+ 	/*height: 207px;
+ 	width: 235px;*/
+ }
+ .img-box h2 {
+ 	color: #405089;
+ 	line-height: 15px;
+ 	font-size: 12px;
+ }
+ .img-box p {
+ 	color: #bcbaba;
+ 	font-size: 12px;
+ 	line-height: 14px;
+ }
+ footer {
+ 	line-height: 65px;
+ 	margin-top: 48px;
+ }
+ .glyphicon1  {
+ 	display: inline-block;
+ 	margin-right: 5px;
+ 	text-align: center;
+ 	color: #405089;
+ }
+ .glyphicon2 {
+ 	display: inline-block;
+ 	margin-right: 5px;
+ 	text-align: center;
+ 	color: #405089;
+ }
+ .glyphicon3 {
+ 	display: inline-block;
+ 	margin-right: 5px;
+ 	text-align: center;
+ 	color: #405089;
+ }
+ .glyphicon-style {
+ 	width: 27.8px;
+ 	height: 27.8px;
+ 	background-color: #8f68a8;
+ 	border-radius: 50%;
+ 	line-height: 27px;	
+ 	color: white;
+ 	cursor: pointer;
+ }
+ .glyphicon1 p {
+ 	display: none;
+ }
+ .glyphicon2 p {
+ 	display: none;
+ }
+ .glyphicon1:hover p {
+ 	display: inline-block;
+ }
+ .glyphicon2:hover p {
+ 	display: inline-block;
+ }
