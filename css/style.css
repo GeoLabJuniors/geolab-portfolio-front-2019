@@ -48,6 +48,7 @@ body {
 }
 .search-div .navbar-right {
 	line-height: 90px;
+        float:right;
 }
 .border {
 	background-color: #a28989f0;
