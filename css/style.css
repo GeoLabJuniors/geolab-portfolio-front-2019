@@ -41,6 +41,7 @@ body {
 	line-height: 90px;
 	border: none;
 	width: 50%;
+	border-right: 1px solid #a28989f0;
 }
 .search-div img {
 	width: 36.5px;
@@ -48,14 +49,14 @@ body {
 }
 .search-div .navbar-right {
 	line-height: 90px;
-        float:right;
+float: right;
 }
-.border {
+/*.border {
 	background-color: #a28989f0;
 	height: 46px;
 	display: inline-block;
 	width: 1px;
-}
+}*/
 .close {
 	width: 65px;
 	height: 61px;
@@ -125,18 +126,21 @@ body {
  	margin-right: 5px;
  	text-align: center;
  	color: #405089;
+ 	transition-delay: 0.2s;
  }
  .glyphicon2 {
  	display: inline-block;
  	margin-right: 5px;
  	text-align: center;
  	color: #405089;
+ 	transition-delay: 0.2s;
  }
  .glyphicon3 {
  	display: inline-block;
  	margin-right: 5px;
  	text-align: center;
  	color: #405089;
+ 	transition-delay: 0.2s;
  }
  .glyphicon-style {
  	width: 27.8px;
@@ -158,4 +162,103 @@ body {
  }
  .glyphicon2:hover p {
  	display: inline-block;
+ }
+ .personal {
+ 	height: 139px;
+ 	border-top:1px solid rgba(0, 0, 0, 0.16) ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16) ;
+    padding-right: 6%;
+    padding-left: 6%;
+ }
+ .personal-img {
+ 	width: 62px;
+ 	height: 62px;
+ }
+ .personal-name {
+ 	color: #405089;
+ 	font-size: 12px;
+ }
+ .personal-information {
+ 	margin-top: 2%;
+ 	width: 130px;
+ 	text-align: center;
+ 	display: inline-block;
+ }
+ .social-icon {
+ 	display: inline-block;
+ 	line-height: 139px;
+ }
+ .icon1 {
+ 	background-color: #4176fa;
+ 	color: #f1f2f2;
+ 	font-size: 25px;
+ 	width: 32px;
+ 	height: 32px;
+ 	line-height: 32px;
+ 	text-align: center;
+ 	border-radius: 50%;
+ }
+ .icon2 {
+ 	background-color: #f26798;
+ 	color: #f1f2f2;
+ 	font-size: 25px;
+ 	width: 32px;
+ 	height: 32px;
+ 	line-height: 32px;
+ 	text-align: center;
+ 	border-radius: 50%;
+ }
+ .icon3 {
+ 	background-color:#007ab9;
+ 	color: #f1f2f2;
+ 	font-size: 25px;
+ 	width: 32px;
+ 	height: 32px;
+ 	line-height: 32px;
+ 	text-align: center;
+ 	border-radius: 50%;
+ }
+ @media screen and (max-width: 780px) {
+ 	.responsive {
+    padding-left: 7%;
+    padding-right: 7%;
+ 	}
+ 	.responsive1 {
+ 		margin-left: 5%;
+ 	}
+ 	.navbar-right {
+ 		float: right;
+ 	}
+ 	.personal-information {
+ 		width: 100%;
+ 		display: block;
+ 	}
+ 	.personal {
+ 		height: 100%;
+ 	}
+ 	.nonfloat {
+ 		float: none;
+ 		display: block;
+ 		line-height: 70px;
+ 		text-align: center;
+ 	}
+ }
+  @media screen and (max-width: 500px) {
+ 	.responsive {
+    padding-left: 17%;
+    padding-right: 17%;
+ 	}
+ 	.responsive1 {
+ 		margin-left: 15%;
+ 	}
+ 	.about {
+ 		margin-right: 5px;
+ 		width: 110px;
+ 	}
+ 	.search {
+ 		width: 57px;
+ 	}
+ 	.search img {
+ 		width: 51px;
+ 	}
  }
