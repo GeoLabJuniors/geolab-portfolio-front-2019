@@ -2,7 +2,7 @@ $("#search").click(function(){
 			$("#searchdiv").css({"display":"block"});
 			$(".close").css({"display":"block"});
 			$(this).css({"display":"none"});
-
+            $('input.search-input').focus();
 		});
 
 		$(".close").click(function(){
