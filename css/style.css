@@ -74,7 +74,7 @@ float: right;
 	width: 65px;
 	height: 28px;
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
-	
+	cursor: pointer;
 }
 .tags p{
 	color: #8f68a8;
@@ -90,6 +90,7 @@ float: right;
 	margin-bottom: 1%;
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
 	padding: 0 1%;
+	cursor: pointer;
 }
 .alltag p {
 	color: #8f68a8;
@@ -99,15 +100,25 @@ float: right;
 .img-box {
 	opacity: 0.98;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+	margin-bottom: 30px;
 }
 .img-box h1 {
 	color: #405089;
 	font-size: 12px;
 	line-height: 15px;
 	text-align: center;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+.img-wrapper {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .img-size{
 	width: 100%;
+	visibility: hidden;
  	/*height: 207px;
  	width: 235px;*/
  }
@@ -116,6 +127,7 @@ float: right;
  	line-height: 15px;
  	font-size: 12px;
  }
+ 
  .img-box p {
  	color: #bcbaba;
  	font-size: 12px;
