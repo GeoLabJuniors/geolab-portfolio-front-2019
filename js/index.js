@@ -1,62 +1,71 @@
 $("#search").click(function(){
-			$("#searchdiv").css({"display":"block"});
-			$(".close").css({"display":"block"});
-			$(this).css({"display":"none"});
-            $('input.search-input').focus();
-		});
+ $("#searchdiv").css({"display":"block"});
+ $(".close").css({"display":"block"});
+ $(this).css({"display":"none"});
+ $('input.search-input').focus();
+});
 
-		$(".close").click(function(){
-			$("#searchdiv").css({"display":"none"});
-			$("#search").css({"display":"inline-block"});
-			$(this).css({"display":"none"});
+$(".close").click(function(){
+ $("#searchdiv").css({"display":"none"});
+ $("#search").css({"display":"inline-block"});
+ $(this).css({"display":"none"});
 
-		});
+});
+$(".tags").click(function(){
+ $(".alltag").css({"display":"block"});
+ $(this).css({"display":"none"});
 
-		$(".tags").click(function(){
-			$(".alltag").css({"display":"block"});
-			$(this).css({"display":"none"});
+});
 
-		});
+$("#slide-show").click(function(){
+ $(".hide-slider").css({"display":"block"});
+ $(".slider").css({"display":"none"});
 
+});
+
+// $("#slide-show").click(function)() {
+//     $(".hide-slider").css({"display":"block"});
+//     $(".slider").css({"display":"none"});
+// });
 jssor_1_slider_init = function() {
 
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $SlideWidth: 720,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
+    var jssor_1_options = {
+      $AutoPlay: 1,
+      $SlideWidth: 720,
+      $ArrowNavigatorOptions: {
+        $Class: $JssorArrowNavigator$
+    },
+    $BulletNavigatorOptions: {
+        $Class: $JssorBulletNavigator$
+    }
+};
 
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-            /*#region responsive code begin*/
+/*#region responsive code begin*/
 
-            var MAX_WIDTH = 980;
+var MAX_WIDTH = 980;
 
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
+function ScaleSlider() {
+    var containerElement = jssor_1_slider.$Elmt.parentNode;
+    var containerWidth = containerElement.clientWidth;
 
-                if (containerWidth) {
+    if (containerWidth) {
 
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
 
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
+        jssor_1_slider.$ScaleWidth(expectedWidth);
+    }
+    else {
+        window.setTimeout(ScaleSlider, 30);
+    }
+}
 
-            ScaleSlider();
+ScaleSlider();
 
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-        jssor_1_slider_init();
+$Jssor$.$AddEvent(window, "load", ScaleSlider);
+$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+/*#endregion responsive code end*/
+};
+jssor_1_slider_init();
