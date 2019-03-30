@@ -4,7 +4,8 @@ body {
 .navbar-brand img {
 	width: 68px;
 	height: 61px;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
 	display: inline-block;
 }
 .navbar {
@@ -13,7 +14,8 @@ body {
 .about {
 	width: 150px;
 	height: 61px;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
 	text-align: center;
 	color: #8f68a8;
 	font-size: 12px;
@@ -23,7 +25,8 @@ body {
 .search {
 	width: 65px;
 	height: 61px;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
 	line-height: 61px;
 	cursor: pointer;
 	text-align: center;
@@ -64,7 +67,8 @@ float: right;
 .close {
 	width: 65px;
 	height: 61px;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+	        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
 	line-height: 61px;
 	font-size: 42px;
 	margin-top: 15px;
@@ -73,7 +77,8 @@ float: right;
 .tags {
 	width: 65px;
 	height: 28px;
-	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+	        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
 	cursor: pointer;
 }
 .tags p{
@@ -88,7 +93,8 @@ float: right;
 	display:inline-block;
 	margin-right: 10px;
 	margin-bottom: 1%;
-	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+	        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
 	padding: 0 1%;
 	cursor: pointer;
 }
@@ -99,7 +105,8 @@ float: right;
 }
 .img-box {
 	opacity: 0.98;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+	        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
 	margin-bottom: 30px;
 }
 .img-box h1 {
@@ -109,7 +116,8 @@ float: right;
 	text-align: center;
 	white-space: nowrap;
 	overflow:hidden;
-	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
 }
 .img-wrapper {
 	background-position: center;
@@ -144,21 +152,27 @@ float: right;
  	margin-right: 5px;
  	text-align: center;
  	color: #405089;
- 	transition-delay: 0.2s;
+ 	-webkit-transition-delay: 0.2s;
+ 	     -o-transition-delay: 0.2s;
+ 	        transition-delay: 0.2s;
  }
  .glyphicon2 {
  	display: inline-block;
  	margin-right: 5px;
  	text-align: center;
  	color: #405089;
- 	transition-delay: 0.2s;
+ 	-webkit-transition-delay: 0.2s;
+ 	     -o-transition-delay: 0.2s;
+ 	        transition-delay: 0.2s;
  }
  .glyphicon3 {
  	display: inline-block;
  	margin-right: 5px;
  	text-align: center;
  	color: #405089;
- 	transition-delay: 0.2s;
+ 	-webkit-transition-delay: 0.2s;
+ 	     -o-transition-delay: 0.2s;
+ 	        transition-delay: 0.2s;
  }
  .glyphicon-style {
  	width: 27.8px;
@@ -242,15 +256,24 @@ float: right;
 
   
 .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+            -webkit-animation-name: jssorl-009-spin;
+                    animation-name: jssorl-009-spin;
+            -webkit-animation-duration: 1.6s;
+                    animation-duration: 1.6s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+                    animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes jssorl-009-spin {
+            from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+            to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
         }
 
         @keyframes jssorl-009-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+            to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
         }
 .about-title {
 	color: #8f68a8;
@@ -280,7 +303,8 @@ float: right;
 .alltag01 div {
   width: 98px;
   line-height: 28px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #f4f4f4;
 }
 .alltag01 p {
@@ -297,7 +321,8 @@ float: right;
 }
 .project-photo {
 	 height: 926.5px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
   visibility: hidden;
   width: 100%;
 }
@@ -318,7 +343,8 @@ float: right;
 }
 .img-container {
 	height: 444px;
-	 box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+	 -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+	         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
 }
 .hide-slider {
 	display: none;
@@ -356,6 +382,9 @@ float: right;
  		display: block;
  		line-height: 70px;
  		text-align: center;
+ 	}
+ 	.project-photo {
+ 		height: 570px;
  	}
  }
 @media screen and (max-width: 500px) {
